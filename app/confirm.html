@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Recopie</title>
+<style media="screen">
+  div {
+    display: inline-block;
+    border: 0.2rem black solid;
+    width: 20rem;
+    height: 20rem;
+    max-height: 20rem;
+    max-height: 20rem;
+    vertical-align: top;
+    overflow-y: scroll;
+  }
+</style>
+</head>
+<body>
+  <script>
+  function recopie(e){
+var d2 = document.getElementById('d2');
+d2.innerHTML += e.key.toUpperCase();
+  }
+  </script>
+<div id="d" contenteditable="true" onkeypress="recopie(event);">
+</div>
+<div id="d2" >
+</div>
+
+</body>
+</html>
