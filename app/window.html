@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+ <script>
+   var openedWindow
+   function toGoog() {
+    openedWindow  = window.open("https://www.google.com", "goog", "width=400,height=400");
+   }
+   function revien() {
+     openedWindow.close();
+   }
+  </script>
+</head>
+<body>
+  <<button type="button" onclick="toGoog();">New_Window</button>
+  <button type="button" onclick="revien();">close</button>
+</body>
+</html>

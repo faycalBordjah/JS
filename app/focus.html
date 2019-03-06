@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="ladiv">
+  </h1>
+  <span id="mySpan"></span>
+  <script>
+
+  function red(el){
+el.style.backgroundColor = 'red';
+  }
+  function blue(el){
+el.style.backgroundColor = 'blue';
+  }
+
+  </script>
+  <script>
+  </script>
+  <form name="f">
+    <input type="text" onfocus="red(this);" onblur="blue(this);">
+    <input type="text" onfocus="red(this);" onblur="blue(this);">
+    <input type="text" onfocus="red(this);" onblur="blue(this);">
+    <input type="text" onfocus="red(this);" onblur="blue(this);">
+  </form>
+</body>
+</html>

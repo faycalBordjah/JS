@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 align="center">Test sur les factoriel</h1>
+  <script>
+    var table = new Array('Jean','Pierre','Laetitia','David','Jade','Christel');
+    table.splice(1,0,'Anais');
+    document.write("splice for add in a position =>" +table+ " </br>");
+    table.splice(6,1);
+    document.write(table+ " </br>");
+    table.splice(0,0,'Christel');
+    document.write(table+ " </br>");
+    table.pop();
+    document.write("pop => "+table+ "</br>");
+    table.sort();
+    document.write(table+ " </br>");
+    var tab2 = table.slice(0,2);
+    document.write(tab2+ " </br>");
+  </script>
+
+</body>
+</html>

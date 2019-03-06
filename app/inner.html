@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="ladiv">
+  </h1>
+  <span id="mySpan"></span>
+  <script>
+/*    var el = document.getElementById('mySpan');
+    document.getElementById('ladiv').innerHTML = 'test';
+    el.innerHTML = 'mama';
+    el.style.color = 'red';
+    el.style.backgroundColor = 'yellow';
+    el.style.display = 'none';
+    el.style.display = 'inline';*/
+    function change(){
+      if (f.sex.value == "mr") {
+        document.getElementById('d').style.display = 'none';
+      } else {
+        document.getElementById('d').style.display = 'block';
+      }
+    }
+  </script>
+  <form name="f" action="index.html" method="post">
+
+    <label for="homme">men</label><input type="radio" name="sex" value ="mr" onclick="change();" >
+    <div id="d">
+      <textarea name="ta" rows="8" cols="80"></textarea>
+    </div>
+    <label for="femme">women</label><input type="radio" name="sex" value="mme" checked onclick="change">
+  </form>
+</body>
+</html>

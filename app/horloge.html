@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 align = "center">Horloge</h1><br>
+  <script>
+    function heure(){
+      var time = new Date();
+      var heureDig = time.toTimeString().slice(0,8);
+      f.nb.value = heureDig;
+    }
+  </script>
+  <div align="center">
+
+
+  <form name ="f">
+    <label>Heure au format HH:MM:SS</label><input type="text" name="nb">
+  </form>
+  </div>
+</body>
+<script>
+   setInterval(heure,1000);
+</script>
+</html>

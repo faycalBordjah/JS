@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    td {
+      width: 2rem;
+      height: 2rem;
+    }
+  </style>
+  <script>
+    function affiche(){
+      alert('bonjour');
+    }
+    function activate(){
+      document.querySelector('button:nth-of-type(3)').addEventListener('click',affiche,false);
+      document.querySelector('button:nth-of-type(3)').removeAttribute('disabled');
+    }
+    function desactivate(){
+      document.querySelector('button:nth-of-type(3)').removeEventListener('click',affiche,false);
+      document.querySelector('button:nth-of-type(3)').setAttribute('disabled','disabled');
+    }
+  </script>
+</head>
+<body>
+
+  <h1 align="center">Events</h1>
+  <button onclick="activate();" >On</button>
+  <button  onclick="desactivate();">Off</button>
+  <button  disabled="disabled" >Test</button>
+</body>
+</html>

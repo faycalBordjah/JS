@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function calc(){
+    var r1 = parseFloat(f.r1.value);
+    var r2 = parseFloat(f.r2.value);
+    var s = 'Apres l\'operation r1 += r2, r1 a pour valeur ' + (r1+r2) + '\n' +
+     'Apres l\'operation r1 *= r2, r1 a pour valeur ' + (r1*r2) + '\n' +
+     'Apres l\'operation r1 /= r2, r1 a pour valeur ' + (r1/r2) + '\n' +
+     'Apres l\'operation r1 %= r2, r1 a pour valeur ' + (r1%r2) + '\n';
+    f.resu.value=s;
+  }
+  </script>
+</head>
+<body>
+  <h1 align="center">Test des opérateurs élémentaires</h1>
+  <form name ="f" class="" action="" method="post">
+    <label>Entrez un nombre réel R1</label><input type="text" name="r1"><br>
+    <label>Entrez un nombre réel R2</label><input type="text" name="r2">
+    <input type="button" value="calcul" onclick="calc();"><br>
+    <label for="resu">Le resultat est : </label>
+    <textarea name="resu" rows="8" cols="80">
+
+    </textarea>
+  </form>
+</body>
+</html>

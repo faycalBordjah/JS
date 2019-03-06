@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function maj(){
+    alert(f.mail.value.toUpperCase());
+  }
+  </script>
+</head>
+<body>
+  <form name ="f" class="" action="" method="post">
+    <label>Entrez votre nom</label><input type="text" name="nb"></br>
+    <label>Entrez votre adresse mail</label><input type="text" name="mail"></br>
+    <label>Connaissez vous machin ?</label>
+      <label for="Oui">Oui</label><input type="radio" name="client" value="Oui" checked>
+      <label for="Non">Non</label><input type="radio" name="client" value="Non">
+    </br>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Annuler">
+    <input type="button" value="majucules " onclick="maj();">
+  </form>
+</body>
+</html>

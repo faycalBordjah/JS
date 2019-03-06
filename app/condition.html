@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function calc(){
+    var r1 = f.r1.value;
+    var s1 = 'Vous avez entré une lettre majuscule';
+    var s2 = 'Vous avez entré une lettre minuscule';
+    var s3 = 'Vous avez entré un caracter special pas une lettre';
+    if (r1 >= 'a' && r1 <='z') {
+      f.resu.value=s2;
+    }
+    else if (r1 >= 'A' && r1 <='Z') {
+      f.resu.value=s2;
+    }else {f.resu.value=s3;}
+  }
+  </script>
+</head>
+<body>
+  <h1 align="center">Test sur les conditions</h1>
+  <form name ="f" class="" action="" method="post">
+    <label>Entrez un nombre</label><input type="text" name="r1"><br>
+    <input type="button" value="analyse" onclick="calc();"><br>
+    <label for="resu">Le resultat est : </label>
+    <textarea name="resu" rows="8" cols="80">
+
+    </textarea>
+  </form>
+</body>
+</html>

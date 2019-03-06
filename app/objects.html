@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <script>
+    var reference = new Object();
+    reference.nom = 'HD';
+    reference.pu = 2.2;
+    reference.quantite = 10;
+    reference.remise = 5;
+    reference.ajoute10 = function(){
+      reference.quantite = reference.quantite + 10;
+    }
+    reference.ajoute10();
+    console.log(reference.quantite);
+  </script>
+</body>
+</html>

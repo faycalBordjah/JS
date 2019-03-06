@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <style>
+    td {
+      width: 2rem;
+      height: 2rem;
+    }
+  </style>
+  <script>
+    function read(){
+    f.ta.value = localStorage.getItem(f.nom.value);
+  }
+    function save(){
+    localStorage.setItem(f.nom.value,f.ta.value);
+    contenu = '<tr><th>Name</th><th>Value</th><tr>';
+    for (var i = 0 ; i<localStorage.length; i++) {
+      var k = localStorage.key(i);
+      var contenu = contenu + '<tr><td>'+ localStorage.key(i)+'</td> <td>'+localStorage[k]+ '</td></tr>';
+    }
+    document.querySelector('table').innerHTML = contenu;
+  }
+
+  function clear(){
+  localStorage.removeItem(f.nom.value);
+}
+function clearAll(){
+ localStorage.clear();
+}
+  </script>
+</head>
+<body>
+  <h1 align="center">Stockage local HTML5</h1>
+  <div align="center">
+    <form name="f">
+      <label for="nom">Nom: </label><input type="text" name="nom"><br>
+      <textarea placeholder="Données textes" name="ta" rows="8" cols="80"></textarea><br><br>
+      <input type="button" value="Read" onclick="read();">
+      <input type="button" value="Save" onclick="save();">
+      <input type="button" value="Clear" onclick="clear();">
+      <input type="button" value="ClearAll" onclick="clearAll();">
+      <input type="button" value="display" onclick="display();">
+    </form>
+  </div>
+<hr>
+  <div align="center">
+    <h2>Stored data</h2>
+    <table border>
+
+   </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="ladiv">
+  </h1>
+  <span id="mySpan"></span>
+  <script>
+
+  function move1(){
+    var el = document.getElementById('im');
+el.style.marginLeft = "30rem";
+  }
+  function move2(){
+    var el2 = document.getElementById('im');
+el2.setAttribute('style','margin-left:60rem');
+  }
+  function reset(){
+    var el2 = document.getElementById('im');
+el2.style.marginLeft = "60rem";
+  }
+
+  </script>
+  <script>
+  </script>
+  <form name="f">
+    <a href="#" onclick="move1();">move1</a><br>
+    <a href="#" onclick="move2();">move2</a><br>
+    <a href="#" onclick="reset();">reset</a><br>
+    <img src="IMG/Capture d’écran de 2018-11-27 16-23-07.png" height="200rem" width="200rem" id="im">
+  </form>
+</body>
+</html>

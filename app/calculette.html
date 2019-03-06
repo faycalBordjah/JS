@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function calc(){
+   f.resu.value=eval(f.nb.value);
+f.resu.value=parseInt(f.nb.value,16);
+  }
+  </script>
+</head>
+<body>
+  <form name ="f" class="" action="" method="post">
+    <label>Entrez un nombre</label><input type="text" name="nb">
+    <input type="button" value="result " onclick="calc();"><br>
+    <label for="resu">Le resultat est : </label><input type="text" name="resu">
+  </form>
+</body>
+</html>

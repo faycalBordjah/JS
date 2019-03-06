@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<script>
+  var tab = document.getElementsByTagName('span');
+  console.log(tab);
+  for (var i=0; i<tab.length;i++) {
+     tab[i].innerHTML = i+1;
+     tab[i].setAttribute('id','s'+(1+i));
+  }
+
+</script>
+</body>
+</html>

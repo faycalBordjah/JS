@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    td {
+      width: 2rem;
+      height: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 align="center">Tableau de conversion</h1>
+
+  <table border>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+<hr>
+<p class="rouge">Kevin</p>
+<p>Pierre</p>
+<p>Johan</p>
+<p>Elise</p>
+<p class="rouge">Elise</p>
+<p class="green">Pierre</p>
+<p>Johan</p>
+<p class="green">Elise</p>
+  <script>
+    var table = document.getElementsByTagName('td');
+    for (var i=0; i<table.length;i++) {
+      if (i<16) {
+        table[i].innerHTML ='#0' + i.toString(16);
+      }else
+       {table[i].innerHTML ='#' + i.toString(16);}
+  }
+  /////////////////////////////////////////////////////////////////////////
+  var c = document.getElementsByClassName('rouge');
+  var b = document.querySelectorAll('p:nth-child(odd)');
+/*  for (var i = 0; i < c.length; i++) {
+    c[i].style.color='red';
+  }*/
+  for (var i = 0; i < b.length; i++) {
+    b[i].style.color='green';
+  }
+  </script>
+</body>
+</html>

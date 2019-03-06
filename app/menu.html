@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+<style media="screen">
+  li{
+    display: inline-block;
+    padding-right: 2rem;
+  }
+</style>
+<script>
+function ajout(){
+  var ul= document.querySelector('ul');
+  var li= document.createElement('li');
+  var a = document.createElement('a');
+  var t = document.createTextNode("Cinquieme");
+  a.setAttribute('href','page5.html');
+  a.appendChild(t);
+  li.appendChild(a);
+  ul.appendChild(li);
+  console.log(ul);
+}
+</script>
+</head>
+<body>
+  <ul>
+    <li><a href="page1.html">Premier</a></li>
+    <li><a href="page2.html">Deuxieme</a></li>
+    <li><a href="page3.html">Troisieme</a></li>
+    <li><a href="page4.html">Quatrieme</a></li>
+  </ul>
+  <button type="button" name="button" onclick="ajout();">Add a Bord</button>
+</body>
+</html>
