@@ -5,14 +5,14 @@
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
   <script>
-  function spa(el){
-    document.getElementById('mySpan').innerHTML = el.style.height = "55px";
+  function spa(e){
+    document.getElementById('mySpan').innerHTML = e.offsetX + ' | '+ e.offsetY;
 }
   </script>
 </head>
 <body>
   <span id="mySpan"></span><br><br>
 
-    <img src="IMG/Capture d’écran de 2018-11-27 16-23-07.png" height="200rem" width="200rem" id="im1" onmousemove="spa(this);">
+    <img src="IMG/Capture d’écran de 2018-11-27 16-23-07.png" height="200rem" width="200rem" id="im1" onmousemove="spa(event);">
 </body>
 </html>

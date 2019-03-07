@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Operator</title>
+    <style>
+        div{
+            border: thick black solid;
+            height: 20rem;
+            width: 30rem;
+            overflow: auto;
+        }
+        img {
+          display: block;
+          margin: 30px auto;
+          height:12rem;
+          width:12rem;
+        }
+    </style>
+    <script>
+        function autoriser(ev){
+            ev.preventDefault();
+        }
+
+        function drag(ev){
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev){
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <img src="IMG/Capture d’écran de 2018-11-27 16-23-07.png" id="drag2" draggable="true" ondragstart="drag(event)">
+    <div id="div1" ondragover="autoriser(event)" ondrop="drop(event);">
+    </div>
+    <<audio controls preload="auto" autobuffer>
+      <source src="IMG/725.mp3" type="audio/mp3">
+      <source src="IMG/725.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

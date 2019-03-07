@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function init(){
+      var convas =  document.getElementById('c');
+      var ctx = convas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.closePath();
+    //  ctx.arc(190, 100, 80, 0, 2 * Math.PI);
+    //  ctx.stroke();
+    ctx.fill();
+    }
+
+  </script>
+</head>
+<body onload="init();">
+  <canvas id="c" width="300" height="300" style="border:1px solid #000000";>
+
+  </canvas>
+  <object type="image/svg+xml" data="https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg" height="200" width="200">
+
+  </object>
+</body>
+</html>

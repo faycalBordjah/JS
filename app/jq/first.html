@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>jquery</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+
+  <p>this txt is in html</p>
+<ul class="rouge">
+      <li class="impair">Liste à puces 1 : élément 1</li>
+      <li class="pair">Liste à puces 1 : élément 2</li>
+      <li class="impair">Liste à puces 1 : élément 3</li>
+  </ul>
+  <div>
+      <ul class="bleu">
+        <li class="impair">Liste à puces 2 : élément 1</li>
+        <li class="pair">Liste à puces 2 : élément 2</li>
+        <li class="impair">Liste à puces 2 : élément 3</li>
+      </ul>
+  </div>
+  <ol class="rouge">
+      <li>Liste numérotée : élément 1</li>
+      <li>Liste numérotée : élément 2</li>
+      <li>Liste numérotée : élément 3</li>
+  </ol>
+
+  <div id="contenu">
+    <p>Première liste</p>
+    <ul id="idd">
+      <li>un</li>
+      <li>deux</li>
+      <li>trois</li>
+      <li>quatre</li>
+    </ul>
+    </div>
+    <p>Deuxième liste</p>
+    <ol>
+      <li>premier</li>
+      <li>deuxième</li>
+      <li>troisième<dli>
+    </ol>
+    <table border>
+      <tr>
+        <th>head1</th>
+        <th>head1</th>
+        <th>head1</th>
+        <th>head1</th>
+        <th>head1</th>
+      </tr>
+      <tr>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+
+      </tr>
+      <tr>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+
+      </tr>
+      <tr>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+
+      </tr>
+      <tr>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+        <td>ligne</td>
+
+      </tr>
+    </table>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <table id="t" border>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+    </table>
+<!--  <img src="../IMG/1.jpg" title="cap1" border="2px">
+  <img src="../IMG/2.jpg" title="cap2" border="2px"> -->
+    <script>
+      $(function(){
+        //$('tr>td').css('background-color','red');
+  //      $('#textjq').html('this text is in jq');
+    //    $('p').css('background','yellow');
+      //  $('img').css('border-color','red');
+        //$('[title^="cap1"]').css('border-color','blue');
+      //  $('[title^="cap2"]').css('border-color','green');
+      //  $('ul li:nth-child(3)').css('color', 'green');
+      //  $('ul li:first-child').css('color', 'blue');
+      //  $('ul#idd>li').css('background-color','red');
+        //$('div ul').css('background','yellow').css('border','solid').css('font-size','2em');
+        //$('div ul li.impair').css('background','yellow').css('border ','solid').css('font-size','2em');
+      // $('tr:even').css('background-color','red');
+      //  $('td:even').css('background-color','green');
+        //$('tr:odd').css('background-color','green');
+      //  $('td').css('background-color','red');
+      //   $('tr:even td:nth-child(even)').css('background-color','green');
+      //   $('tr:odd td:nth-child(odd)').css('background-color','green');
+      //   $('tr:even td:nth-child(odd)').css('background-color','red');
+      //   $('tr:odd td:nth-child(even)').css('background-color','red');
+      //   $('tr:even td:nth-child(odd) td:nth-child(odd)').css('background-color','red');*
+      $('span').each(function(index){
+        $(this).html(index+1);
+        //this.innerHTML = index+1;
+      });
+      $('#t td').each(function(i){
+        if (i<16) {
+          $(this).html('#0'+i.toString(16));
+        }else {
+          $(this).html('#'+i.toString(16));
+        }
+
+        //this.innerHTML = index+1;
+      });
+
+      });
+    </script>
+</body>
+</html>

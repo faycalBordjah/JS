@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>jquery</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+  <h2>Partie 1</h2>
+    <p>Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.</p>
+    <ul>
+      <li>un</li>
+      <li>deux</li>
+      <li>trois</li>
+      <li>quatre</li>
+    </ul>
+    <hr>
+    <h2>Partie 2</h2>
+    <p>Illud autem non dubitatur quod cum esset aliquando virtutum omnium domicilium Roma, ingenuos advenas plerique nobilium, ut Homerici bacarum suavitate Lotophagi, humanitatis multiformibus officiis retentabant.</p>
+    <ul>
+      <li>premier</li>
+      <li>deuxième</li>
+      <li>troisième</li>
+    </ul>
+    <hr>
+<script>
+        $(function(){
+/*           $('ul').each(function(){
+              var dum = $(this);
+              $('ul').replaceWith('<ol>'+dum.html()+'<ol>');
+            })*/
+            $('ul').each(function(){
+                      $(this).replaceWith('<ol>'+$(this).html()+'<ol>');})
+      });
+</script>
+  </body>
+
+</html>
